@@ -3,7 +3,7 @@ US Airline Twitter-based Sentiment Analysis Using Tensorflow and Keras
 
 Sharing the final project for HKUST MBA course ISOM 5240, titled "Deep Learning Business Applications with Python" developed with [@danieltsaicw](https://github.com/danieltsaicw).
 
-We utilized several key resources to produce a program that could identify key hashtags and analyze the sentiment of the user, identifying the Tweet as either positive, negative, or neutral.  These included using Keras with Python running on Google's Tensorflow, as well as varios methods for training a Deconvolutional Neural Network (DNN), as well as Twitter's API functionality to create a working live demo.
+We utilized several key resources to produce a program that could identify key hashtags and analyze the sentiment of the user, identifying the Tweet as either positive, negative, or neutral.  These included using Keras with Python running on Google's Tensorflow, as well as varios methods for building and training a Deep Neural Network (DNN), as well as using Twitter's API functionality to create a working live demo.
 
 ## The Dataset & Database
 
@@ -30,7 +30,15 @@ SQLite for data input and analysis with a dataset obtained from [Kaggle](https:/
 
 Accuracy was measured using binary crossentropy.  Accuracy was better on the postive-leaning tweets, but ranged from 80% - 90%.  The PowerPoint presentation is included in the repo for full detail.
 
-## Overhaul
+## Overhaul & Model
+
+The model used the following parameters to achieve a satisfactory output.
+
+- Baseline_model: Dense(16,64,32, 1),  
+- Larger_model: Dense(512, 512, 1), epochs=20, batch_size=512, 
+- Smaller_model = Dense(4, 4, 1), epochs=20, batch_size=512, 
+-	L2_model = Dense(16, 16, 1), Regularizers(0.001,), epochs=20, batch_size=512, verbose=2, acc = 80.5% 
+-	Dropout_model: Dense(16, 32, 1), Droput(0.5, 0.5), epochs=20, batch_size=512, verbose=2) 
 
 We used dropout methodologies and L2 modeling to increase accuracy of the model and to prevent overfitting.
 
