@@ -1,13 +1,13 @@
 # Sentiment-Analysis-Using-DNN
 US Airline Twitter-based Sentiment Analysis Using Tensorflow and Keras
 
-Sharing the final project for HKUST MBA course ISOM 5240, titled "Deep Learning Business Applications with Python" written in partnership with @danieltsaicw
+Sharing the final project for HKUST MBA course ISOM 5240, titled "Deep Learning Business Applications with Python" developed with [@danieltsaicw](https://github.com/danieltsaicw).
 
-We utilized several key resources to produce a program that could identify key hashtags and analyze the sentiment of the user, identifying the Tweet as either positive, negative, or neutral.
+We utilized several key resources to produce a program that could identify key hashtags and analyze the sentiment of the user, identifying the Tweet as either positive, negative, or neutral.  These included using Keras with Python running on Google's Tensorflow, as well as varios methods for training a Deconvolutional Neural Network (DNN), as well as Twitter's API functionality to create a working live demo.
 
 ## The Dataset & Database
 
-Natural language processing was achieved using TFIDF and Python package [sklearn](https://pypi.org/project/scikit-learn/)
+Natural language processing was achieved using TFIDF and the Python package [sklearn](https://pypi.org/project/scikit-learn/)
 
 SQLite for data input and analysis with a dataset obtained from [Kaggle](https://www.kaggle.com/crowdflower/twitter-airline-sentiment) which contains over 14,000 US airline-related Tweets on which our model was trained.  These data points included the following attributes:
 
